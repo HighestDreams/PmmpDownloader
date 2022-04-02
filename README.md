@@ -1,4 +1,3 @@
-# PmmpDownloader
 # Why?
 Cause there is lots of people who still don't know how to create a minecraft server, So i decided to make this downloader for them to build their server with just a double click.
 # What does this do?
