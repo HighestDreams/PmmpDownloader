@@ -10,8 +10,9 @@ IF ERRORLEVEL 1 (
     ECHO [ERROR] You need intenet connection in intallation proccess, Check your intenet connection and try again
     ECHO ============================================================================
     COLOR 4
-) ELSE (
-    CLS
+    PAUSE
+)
+CLS
     CD /d %~dp0
     COLOR B
 
@@ -32,7 +33,7 @@ IF ERRORLEVEL 1 (
         ECHO ===================================FAILED===================================
         ECHO [ERROR] Missing some packages on your windows, Download started in browser...
         ECHO ============================================================================
-        ECHO [Installer]  Openning browser for manual download...
+        ECHO [Installer]  Openning browser for manually download...
         START "" https://doc.pmmp.io/en/rtfd/installation/downloads.html
     ) ELSE (
         ECHO [Installer]  Downloading Essential files...
@@ -47,5 +48,4 @@ IF ERRORLEVEL 1 (
         ECHO [Installer]  Extracted Essential files successfully, Now your server is ready to start
         COLOR A
     )
-)
 PAUSE
